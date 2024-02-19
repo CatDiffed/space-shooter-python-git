@@ -157,7 +157,7 @@ while running:
 
 
     ## Drawing ##
-    screen.fill((0,0,0)) 
+    screen.fill((100,100,0)) 
 
     # 3 images --> tick % 3
     # 100% animation speed: tick % 3
@@ -173,10 +173,10 @@ while running:
     # Projectiles
     for projectile in projectiles:
         rect = (projectile['x'], projectile['y'], projectile_w, projectile_h)
-        pg.draw.rect(screen, (255, 0, 0), rect) 
+        pg.draw.rect(screen, (255, 255, 255), rect) 
 
     # Scoreboard
-    text = font_scoreboard.render(f"{score:04d}", True, (255,255,255))
+    text = font_scoreboard.render(f"{score:04d}", True, (2,255,255))
     screen.blit(text, (10,560))
 
     # Update window with newly drawn pixels
