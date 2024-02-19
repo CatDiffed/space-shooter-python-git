@@ -108,6 +108,12 @@ while running:
     if right_pressed:
         ship_x += 8
 
+    if tick == 1000:
+        for i in range(5):
+            alien1 = {'x': 50*i + 50 , 'y': 0}
+            alien2 = {'x': 50*i + 50, 'y': 50}
+            aliens.append(alien1)
+            aliens.append(alien2)
     # Projectile movement
     # Reverse iteration needed to handle each projectile correctly
     # in cases where a projectile is removed.
