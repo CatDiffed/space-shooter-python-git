@@ -59,7 +59,7 @@ font_scoreboard = pg.font.Font("fonts/PressStart2P-Regular.ttf", 20)
 ### Game loop ###
 running = True
 tick = 0
-score = 0
+score = 10
 while running:
 
     ## Event loop  (handle keypresses etc.) ##
